@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Select a Major</title>
+		<h1>Select a major to see a list of all student within the major.</h1>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+		<linkrel="stylesheet"href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+	<button type='button' class="btn btn-primary" onClick="getData('major')">CIT</button>
+	<button type='button' class="btn btn-primary" onClick="getData('major')">Business</button>
+
+	
+	</body>
+	<script type="text/x-handlebars-template" id="MajorTemplate">
+		<table cellspacing='12'>
+			<tr><th>Name</th><th>Major</th><th>Midterm Score</th><th>Final Score</th></tr>
+			{{#each rows}}
+				<tr>
+					<td>{{name}}</td><td>{{major}}</td><td>{{midterm}}</td><td>{{final}}</td>
+				</tr>
+			{{/each}}
+		</table>
+	</script>
+<script src = ''></script>
